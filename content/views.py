@@ -11,8 +11,13 @@ from kinstagram.settings import MEDIA_ROOT
 
 class Main(APIView):
     def get(self, request):
-        # feed_list = Feed.objects.all().order_by("-id")
-        return render(request, "kinstagram.main.html")
+        feed_list = Feed.objects.all().order_by("-id")
+        context = dict(feed_list=feed_list)
+        print("len(feed_list): ", len(feed_list))
+        print("context: ", context)
+        print("len(context): ", len(context))
+        return render(request, "kinstagram/main.html", context=dict(feed_list=feed_list))
+
 
 class FeedUpload(APIView):
     def post(self, request):

@@ -1,0 +1,25 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom"
+     style="width: 100%;height: 50px;position: fixed;">
+    <div class="container">
+        <img id="go_home" class="go_home" style="height: 30px; object-fit: contain"
+             src="http://cins.duckdns.org/static/assets/img/instagram_logo.png">
+        <input class="form-control" style="width: 200px" type="search" placeholder="Search" aria-label="Search">
+        <div>
+            <span class="material-icons go_home">home</span>
+            <span class="material-icons navi_icons">send</span>
+            <span id="add_feed" class="material-icons-outlined navi_icons" href="#">add_box</span>
+            <span class="material-icons-outlined navi_icons">explore</span>
+            <span class="material-icons-outlined navi_icons">favorite_border</span>
+
+            <!--div class="dropdown" style="position: relative; z-index: 9999">
+            </div-->
+        </div>
+    </div>
+
+    <!-- 아래 spinner-box는 테스트를 위해 찍어 본다. -->
+    <!--div id="spinner-box" style="justify-content: center">
+{#    <!--<div id="spinner-box" class="not-visible">-->#}
+        <div class="spinner-border text-primary" role="status"></div>
+    </div-->
+</nav>

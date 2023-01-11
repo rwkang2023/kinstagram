@@ -5,3 +5,4 @@ db.sqlite3 # 만약 "sqlite3" DB를 사용할 경우에는, 여기서 빼고, �
 .idea
 *.pyc
 __pycache__
+*.whl

@@ -1,0 +1,46 @@
+{% load static %}
+<div id="modal_add_feed" class="modal modal_overlay">
+    <div class="modal_window">
+        <div class="modal_title">
+            <div class="modal_title_side"></div>
+            <div> 새 게시물 </div>
+            <div class="modal_title_side">
+                <span id="close_modal" class="material-symbols-outlined">close</span>
+            </div>
+        </div>
+        <div id="modal_image_drop" class="modal_image_upload">
+        </div>
+    </div>
+</div>
+
+<div id="modal_add_feed_content" class="modal modal_overlay_content">
+    <div class="modal_window">
+        <div class="modal_title">
+            <div class="modal_title_side"></div>
+            <div style="margin: 5px;"> 새 게시물 </div>
+            <div class="modal_title_side">
+                <span id="close_modal_content" class="material-symbols-outlined">close</span>
+            </div>
+        </div>
+        <div class="modal_image_content">
+            <div id="input_image" class="modal_image_upload_content">
+
+            </div>
+            <div class="modal_content_write">
+                <div class="feed_name">
+                    <div class="profile_box">
+                        <!--img id="input_profile_image" class="profile_img" src="{{ feed.profile_image }}"-->
+                    </div>
+                    <span id="input_user_id" class="feed_name_txt">clarus.66</span>
+                    <span id="input_user_email" class="feed_email_txt">rwkang@naver.com</span>
+                </div>
+                <div style="height: 440px">
+                    <textarea id="input_content" class="feed_content_textarea form-control col-sm-5" rows="10" placeholder="설명을 입력하세요..."></textarea>
+                </div>
+                <div style="width: 100%; text-align: center">
+                    <button id="button_write_feed" type="button" class="btn btn-primary" style="width: 268px">공유하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
