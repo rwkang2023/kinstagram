@@ -1,0 +1,7 @@
+venv
+media
+migrations # 이걸 넣어줘야 한다.
+db.sqlite3 # 만약 "sqlite3" DB를 사용할 경우에는, 여기서 빼고, 같이 넘겨주어야 한다.
+.idea
+*.pyc
+__pycache__
